@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Дата {{vm.event.date}}</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3" ng-repeat="photo in vm.event.photos">
+            <a href="photos/{{photo.id}}.jpg" class="thumbnail">
+                <img ng-src="photos/{{photo.id}}.jpg" class="img-thumbnail">
+            </a>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container-fluid -->

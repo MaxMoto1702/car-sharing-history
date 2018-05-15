@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"
+      class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge"/>
+    <title>
+        Car Sharing History
+    </title>
+    <meta name="description"
+          content=""/>
+    <meta name="viewport"
+          content="width=device-width"/>
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="favicon.ico"/>
+    <link rel="stylesheet"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="webjars/angularjs/1.6.10/angular-csp.css"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="ui-bootstrap-csp.css"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="webjars/metisMenu/1.1.3/metisMenu.min.css"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="sb-admin-2.css"
+          type="text/css"/>
+    <link href="webjars/font-awesome/4.7.0/css/font-awesome.css"
+          rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet"
+          href="main.css"
+          type="text/css"/>
+</head>
+<body class="ng-cloak">
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">
+                Car Sharing History
+            </a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right hidden-xs">
+            <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i></a></li>
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a ui-sref="users.list">Пользователи</a>
+                    </li>
+                    <li>
+                        <a ui-sref="events.list">События</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <ui-view></ui-view>
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<script>
+    modules = [];
+</script>
+
+<script src="webjars/jquery/3.1.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="webjars/metisMenu/1.1.3/metisMenu.min.js"></script>
+
+<script src="sb-admin-2.min.js"></script>
+
+<script src="webjars/angularjs/1.6.10/angular.min.js"></script>
+
+<script src="webjars/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+<script src="webjars/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+<script src="webjars/angular-ui-router/1.0.15/angular-ui-router.min.js"></script>
+
+<script src="main.js"></script>
+<script src="user-module.js"></script>
+<script src="event-module.js"></script>
+
+<script type="text/javascript">
+    angular.element(document).ready(function () {
+        angular.bootstrap(document, modules.slice(0), {
+            strictDi: false
+        });
+    });
+</script>
+
+</body>
+</html>

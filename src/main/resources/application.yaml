@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: УСПН
+app:
+  bots:
+    telegram:
+      token: 564525758:AAFCzkY-ImsCl0CLzLnxRR-K-nGnws4p5ig
+      adminUserId: 208641105
+    vk:
+      groupId: 166179499
+      token: 588d48476b6a47f45bf15d8c35d7508e9c1dc57102cd23161f8006581b168bf3a5a9862b48565a3c05697
+      adminUserId: 218113548
